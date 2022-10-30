@@ -55,6 +55,7 @@ h5 {
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 section {
@@ -129,7 +130,7 @@ img {
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
