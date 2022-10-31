@@ -1,25 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import './header.css';
-import CTA from './CTA';
-import ME from '../../assets/me.png';
-import HeaderSocials from './HeaderSocials';
+import { HiOutlineHome } from 'react-icons/hi';
+import { FaTimes } from 'react-icons/fa';
+import { RiContactsBook2Line } from 'react-icons/ri';
+import { AiOutlineAppstore, AiOutlineUser } from 'react-icons/ai';
+import { CiViewList, CiImageOn } from 'react-icons/ci';
+import { MdOutlineHomeRepairService } from 'react-icons/md';
 
 function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
-        <header id="home">
-            <div className="container header__container">
-                <h5>Привет, меня зовут</h5>
-                <h1>Гринченко Сергей</h1>
-                <h5 className="text-light">Junior Frontend-разработчик</h5>
-                <CTA />
-                <HeaderSocials />
-                
-                <div className="me">
-                    <img src={ME} alt="me" />
+        <header className="header" id="home">
+            <nav className="nav container">
+                <a href="index.html" className='nav__logo'>GS</a>
+
+                <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
+                    <ul className="nav__list grid">
+
+                        <li className="nav__item">
+                            <a href="#home" className="nav__link active-link">
+                                <HiOutlineHome className="nav__icon"/> Домой
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a href="#about" className="nav__link">
+                                <AiOutlineUser className="nav__icon"/> Обо мне
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a href="#skills" className="nav__link">
+                                <CiViewList className="nav__icon"/> Навыки
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a href="#services" className="nav__link">
+                                <MdOutlineHomeRepairService className="nav__icon"/> Сервисы
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a href="#portfolio" className="nav__link">
+                                <CiImageOn className="nav__icon"/> Портфолио
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a href="#contact" className="nav__link">
+                                <RiContactsBook2Line className="nav__icon"/> Контакты
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <FaTimes className="nav__close" onClick={() => setShowMenu(!showMenu)} />
                 </div>
 
-                <a href="#contact" className='scroll__down'>Листай вниз</a>
-            </div>
+                <div className="nav__toggle" onClick={() => setShowMenu(!showMenu)}>
+                    <AiOutlineAppstore />
+                </div>
+            </nav>
         </header>
     )
 }
