@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
+import Home from './components/home/Home';
 // import Nav from './components/nav/Nav';
 // import About from './components/about/About';
 // import Experience from './components/experience/Experience';
@@ -15,6 +16,10 @@ function App() {
     <div className="App">
       <>
         <Header />
+        <main className="main">
+          <Home />
+        </main>
+
         {/* <Nav />
         <About />
         <Experience />

@@ -19,7 +19,7 @@ function Header() {
                     <ul className="nav__list grid">
 
                         <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
+                            <a href="#home" className="nav__link">
                                 <HiOutlineHome className="nav__icon"/> Домой
                             </a>
                         </li>
