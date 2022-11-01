@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Home from './components/home/Home';
 // import Nav from './components/nav/Nav';
 import About from './components/about/About';
+import Skills from './components/skills/Skills';
 // import Experience from './components/experience/Experience';
 // import Services from './components/services/Services';
 // import Portfolio from './components/portfolio/Portfolio';
@@ -14,14 +15,14 @@ import About from './components/about/About';
 function App() {
   return (
     <div className="App">
-      <>
-        <Header />
-        <main className="main">
-          <Home />
-          <About />
-        </main>
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+      </main>
 
-        {/* <Nav />
+      {/* <Nav />
         <About />
         <Experience />
         <Services />
@@ -29,7 +30,6 @@ function App() {
         <Testimonials />
         <Contact />
         <Footer /> */}
-      </>
     </div>
   );
 }

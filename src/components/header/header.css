@@ -21,6 +21,16 @@
     font-weight: var(--font-medium);
 }
 
+.nav__logo {
+    background: url(../../assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}
+
+
 .nav__list {
     display: flex;
     column-gap: 2rem;
@@ -59,6 +69,11 @@
 
     .nav {
         height: var(--header-height);
+    }
+
+    .nav__logo {
+        width: 25px;
+        height: 25px;
     }
 
     .nav__menu {

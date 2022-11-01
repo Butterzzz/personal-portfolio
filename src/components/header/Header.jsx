@@ -11,9 +11,9 @@ function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <header className="header" id="home">
+        <header className="header">
             <nav className="nav container">
-                <a href="index.html" className='nav__logo'>GS</a>
+                <a href="/" className='nav__logo'></a>
 
                 <div className={showMenu ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
