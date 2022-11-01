@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 // import Nav from './components/nav/Nav';
-// import About from './components/about/About';
+import About from './components/about/About';
 // import Experience from './components/experience/Experience';
 // import Services from './components/services/Services';
 // import Portfolio from './components/portfolio/Portfolio';
@@ -18,6 +18,7 @@ function App() {
         <Header />
         <main className="main">
           <Home />
+          <About />
         </main>
 
         {/* <Nav />

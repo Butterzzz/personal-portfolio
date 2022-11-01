@@ -1,13 +1,11 @@
 import React from "react";
 
-
 function Data() {
     return (
         <div className="home__data">
             <h1 className="home__title">Сергей Гринченко</h1>
             <h3 className="home__subtitle">Frontend разработчик</h3>
-            <p className="home__description">Мне нравится решать сложные задачи: разрабатывать сайты и веб-приложения или создавать дизайн
-                сайтов с удобным интерфейсом.</p>
+            <p className="home__description">Я веб-разработчик из Благовещенска, и я очень увлечен и предан своей работе.</p>
             <a href="#contact" className="button button--flex">
                 Спроси меня
                 <svg

@@ -1,47 +1,29 @@
 import React from "react";
 import './about.css';
-import ME from '../../assets/me-about.jpg';
-import { FaAward } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { VscFolderLibrary } from 'react-icons/vsc';
-
+import AboutImg from '../../assets/about.jpg';
+import CV from '../../assets/cv.pdf';
+import Info from './Info';
+import { CgFileDocument } from 'react-icons/cg';
 
 function About() {
+
     return (
-        <section id="about">
-            <h5>Узнай</h5>
-            <h1>Обо мне</h1>
+        <section className="about section" id="about">
+            <h2 className="section__title">Обо мне</h2>
+            <span className="section__subtitle">Немного подробнее</span>
 
-            <div className="container about__container">
-                <div className="about__me">
-                    <div className="about__me-image">
-                        <img src={ME} alt="about" />
-                    </div>
-                </div>
-                <div className="about__content">
-                    <div className="about__cards">
-                        <article className="about__card">
-                            <FaAward className="about__icon"/>
-                            <h5>Опыт</h5>
-                            <small>3+ года в разработе</small>
-                        </article>
+            <div className="about__container container grid">
+                <img src={AboutImg} alt="me" className="about__img" />
 
-                        <article className="about__card">
-                            <FiUsers className="about__icon"/>
-                            <h5>Клиенты</h5>
-                            <small>200+ довольных клиентов</small>
-                        </article>
+                <div className="about__data">
+                    <Info />
 
-                        <article className="about__card">
-                            <VscFolderLibrary className="about__icon"/>
-                            <h5>Проекты</h5>
-                            <small>80+ рабочих проектов</small>
-                        </article>
-                    </div>
+                    <p className="about__description">Мне нравится решать сложные задачи: разрабатывать сайты и веб-приложения или создавать дизайн  сайтов с удобным интерфейсом.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident dicta magnam suscipit nulla nobis soluta vitae rerum natus odit, facere doloribus molestiae iure quas animi consectetur assumenda sapiente ducimus!</p>
+                    <a href={CV} download className="button button--flex">
+                        Скачать CV <CgFileDocument className="button__icon"/>
+                    </a>
 
-                    <a href="#contact" className="btn btn-primary">Напиши мне</a>
                 </div>
             </div>
         </section>
