@@ -20,37 +20,31 @@ function Header() {
 
                         <li className="nav__item">
                             <a href="#home" className="nav__link">
-                                <HiOutlineHome className="nav__icon"/> Домой
+                                <HiOutlineHome className="nav__icon" /> Домой
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
-                                <AiOutlineUser className="nav__icon"/> Обо мне
+                                <AiOutlineUser className="nav__icon" /> Обо мне
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#skills" className="nav__link">
-                                <CiViewList className="nav__icon"/> Навыки
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#services" className="nav__link">
-                                <MdOutlineHomeRepairService className="nav__icon"/> Сервисы
+                                <CiViewList className="nav__icon" /> Навыки
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#portfolio" className="nav__link">
-                                <CiImageOn className="nav__icon"/> Портфолио
+                                <CiImageOn className="nav__icon" /> Портфолио
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#contact" className="nav__link">
-                                <RiContactsBook2Line className="nav__icon"/> Контакты
+                                <RiContactsBook2Line className="nav__icon" /> Контакты
                             </a>
                         </li>
 
