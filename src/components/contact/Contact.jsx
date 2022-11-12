@@ -44,7 +44,7 @@ function Contact() {
                             <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+79622840479</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=+79622840479" className="contact__button">Написать сообщение <BsArrowRight className="contact__button-icon" /></a>
+                            <a href="https://api.whatsapp.com/send?phone=89622840479" className="contact__button">Написать сообщение <BsArrowRight className="contact__button-icon" /></a>
                         </div>
 
                         <div className="contact__card">
