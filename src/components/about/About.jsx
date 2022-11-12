@@ -1,9 +1,7 @@
 import React from "react";
 import './about.css';
 import AboutImg from '../../assets/about.jpg';
-import CV from '../../assets/CV.pdf';
 import Info from './Info';
-import { CgFileDocument } from 'react-icons/cg';
 
 function About() {
 
@@ -19,10 +17,6 @@ function About() {
                     <Info />
 
                     <p className="about__description">Мне нравится решать сложные задачи: разрабатывать сайты и веб-приложения или создавать дизайн  сайтов с удобным интерфейсом.</p>
-
-                    <a href={CV} download className="button button--flex">
-                        Скачать CV <CgFileDocument className="button__icon"/>
-                    </a>
 
                 </div>
             </div>

@@ -4,10 +4,9 @@
 }
 
 .footer__container {
-    padding: 2rem 0 6rem;
+    padding: 4rem 0 4rem;
 }
 
-.footer__title,
 .footer__link {
     color: var(--title-color);
 }

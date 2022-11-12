@@ -6,7 +6,6 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer__container container">
-                <h1 className="footer__title">GSS</h1>
 
                 <ul className="footer__list">
                     <li><a href="#home" className="footer__link">Домой</a></li>
