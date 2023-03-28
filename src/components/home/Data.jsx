@@ -1,5 +1,5 @@
 import React from "react";
-import CV from '../../assets/CV.pdf';
+import CV from '../../assets/cv.pdf';
 import { CgFileDocument } from 'react-icons/cg';
 
 function Data() {

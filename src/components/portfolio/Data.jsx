@@ -24,26 +24,26 @@ export const projectsData = [
     {
       id: 3,
       image: Work3,
-      title: "Mesto (Javascript)",
-      category: "сайты",
-      link: "https://butterzzz.github.io/mesto/",
-      github: "https://github.com/Butterzzz/mesto",
-    },
-    {
-      id: 4,
-      image: Work4,
-      title: "Mesto (React + Node)",
+      title: "Mesto",
       category: "приложения",
       link: "https://mesto.gss.nomoredomains.icu/",
       github: "https://github.com/Butterzzz/react-mesto-api-full",
     },
     {
-      id: 5,
-      image: Work5,
+      id: 4,
+      image: Work4,
       title: "Todo App v2",
       category: "приложения",
       link: "https://butterzzz.github.io/todo-app-v2/",
       github: "https://github.com/Butterzzz/todo-app-v2",
+    },
+    {
+      id: 5,
+      image: Work5,
+      title: "Movies Explorer",
+      category: "приложения",
+      link: "https://movies-explorer.gss.nomoredomains.club/",
+      github: "https://github.com/Butterzzz/movies-explorer-frontend",
     },
   ];
 

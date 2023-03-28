@@ -3,7 +3,7 @@ import './header.css';
 import { HiOutlineHome } from 'react-icons/hi';
 import { FaTimes } from 'react-icons/fa';
 import { RiContactsBook2Line } from 'react-icons/ri';
-import { AiOutlineAppstore, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineAppstore } from 'react-icons/ai';
 import { CiViewList, CiImageOn } from 'react-icons/ci';
 
 function Header() {
@@ -30,12 +30,6 @@ function Header() {
                         <li className="nav__item">
                             <a href="#home" className={activeNav === "#home" ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav('#home')}>
                                 <HiOutlineHome className="nav__icon" /> Домой
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#about" className={activeNav === "#about" ? "nav__link active-link" : "nav__link"} onClick={() => setActiveNav('#about')}>
-                                <AiOutlineUser className="nav__icon" /> Обо мне
                             </a>
                         </li>
 
